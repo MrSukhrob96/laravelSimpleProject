@@ -1,5 +1,10 @@
 window._ = require('lodash');
 
+window.UIkit = require("uikit");
+window.Icons = require("uikit/dist/js/uikit-icons");
+
+UIkit.use(window.Icons);
+
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
@@ -16,7 +21,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  * allows your team to easily build robust real-time web applications.
  */
 
-// import Echo from 'laravel-echo';
+// import Echo from 'laravel-echo'
 
 // window.Pusher = require('pusher-js');
 
@@ -24,5 +29,5 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     broadcaster: 'pusher',
 //     key: process.env.MIX_PUSHER_APP_KEY,
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
-//     forceTLS: true
+//     encrypted: true
 // });
